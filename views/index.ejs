@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>File Uploader/Downloader</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <h1>File Uploader/Downloader</h1>
+    <h2>Upload File</h2>
+    <form id="upload-form" enctype="multipart/form-data">
+      <input type="file" name="file" />
+      <button type="submit">Upload</button>
+      <progress id="upload-progress" max="100"></progress>
+    </form>
+
+    <script src="/javascripts/upload.js"></script>
+
+    <form id="download-form">
+      <input type="text" name="id" placeholder="File ID" />
+      <button type="submit">Show</button>
+    </form>
+
+    <video id="video" controls></video>
+    <script src="/javascripts/download.js"></script>
+  </body>
+</html>
