@@ -81,7 +81,7 @@ The following configuration options are available:
 
 | Option | Default | Description |
 | ------ | ------- | ----------- |
-| `PORT` | `4000` | The port to run the server on |
-| `FILE_UPLOAD_PATH` | `./uploads` | The directory to store uploaded files in |
+| `PORT` | `3000` | The port to run the server on |
+| `FILE_UPLOAD_PATH` | `./public/assets/uploads` | The directory to store uploaded files in |
 
 To override a configuration option, set the corresponding environment variable before starting the server.
