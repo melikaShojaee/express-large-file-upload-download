@@ -30,7 +30,6 @@ router.post('/', upload.single('file'), function (req, res, next) {
     const file = req.file;
     console.log(`File ${file.originalname} uploaded successfully`);
 
-    // Use the progress package to track upload progress
     res.status(200).send({ message: `File ${file.originalname} uploaded successfully` })
 });
 
