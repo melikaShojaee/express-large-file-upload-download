@@ -23,7 +23,7 @@ This is an example project that demonstrates how to upload and download large fi
    npm start
    ```
 
-4. Open your web browser and navigate to [http://localhost:4000](http://localhost:4000).
+4. Open your web browser and navigate to [http://localhost:4000](http://localhost:3000).
 
 ## Usage
 
