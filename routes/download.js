@@ -2,8 +2,14 @@ var express = require('express');
 var router = express.Router();
 const path = require('path');
 const fs = require('fs');
+const rateLimit = require('express-rate-limit');
 
-router.get('/:id', function (req, res) {
+const downloadLimit = rateLimit({
+  windowMs: 60 * 60 * 1000, // 1 hour
+  max: 100, // 100 requests per hour
+  message: 'Too many file download requests from this IP, please try again later'
+});
+router.get('/:id', downloadLimit, function (req, res) {
   try {
     const id = req.params.id;
     const filepath = path.join(__dirname, '../public/assets/uploads', id);

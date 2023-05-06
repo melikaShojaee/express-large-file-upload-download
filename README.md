@@ -1,6 +1,6 @@
 # Express Large File Upload/Download
 
-This is an example project that demonstrates how to upload and download large files using Express, as well as how to handle range requests for resuming downloads. The project uses the `multer` middleware for handling file uploads, and the `fs` module for reading and writing files. The code supports files up to 10 GB in size.
+This is an example project that demonstrates how to upload and download large files using Express, as well as how to handle range requests for resuming downloads. The project uses the `multer` middleware for handling file uploads, and the `fs` module for reading and writing files. The code supports files up to 5 GB in size.
 
 ## Getting Started
 
